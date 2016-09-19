@@ -2,7 +2,7 @@
 Personal online resume for Stephen Amaza.
 
 ##Purpose
-This will serve as my home and will be constantly updated as my skills in software development journey improve. Feel free to contribute minor changes, but I will rather not accept large rewrites - I know you people are badass out there, wait for me to catch up :)
+This will serve as my home and will be constantly updated as my skills in software development journey improve. Feel free to contribute minor changes, but I will rather not accept large rewrites - I know you people are badass out there, wait for me to catch up :blush:
 
 I write pretty well though, so if you want to read my thoughts, head to [my Medium](https://medium.com/@steveamaza).
 
@@ -18,4 +18,4 @@ I have a goal to be the [top Ruby programmer in Nigeria](http://github-awards.co
 Why I am doing this weird ass read.me file is because,
 * I am weird and awesome
 * I want to put this publicly so I will be held accountable, and more importantly
-* IT IS PART OF MY ASSIGNMENT :D
+* IT IS PART OF MY ASSIGNMENT :grin:
