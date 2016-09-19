@@ -15,7 +15,7 @@ I have a goal to be the [top Ruby programmer in Nigeria](http://github-awards.co
 | Contribute to open source projects | 15 Nov 16      |    Personal |
 | Host open source project | 25 Dec 16      |    Personal |
 
-![alt image]https://media.giphy.com/media/3oz8xQQP4ahKiyuxHy/giphy.gif "Yup!"
+![alt cool-image](https://media.giphy.com/media/3oz8xQQP4ahKiyuxHy/giphy.gif "Yup!")
 
 Why I am doing this weird ass README.md file is because,
 * I am weird and awesome
