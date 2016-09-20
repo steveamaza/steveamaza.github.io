@@ -10,7 +10,11 @@
    font-family: 'Scriptina', cursive, sans-serif;
    font-size: 30px;
    padding: 15px;
+   a:hover, a:focus {
+     text-decoration: none;
+   }
  }
+
 .navlinks {
   list-style: none;
   margin: 0;
@@ -28,6 +32,85 @@
   color: #fff;
 }
 
+.navbar-toggle {
+  float: left;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+/**
+* Sections
+**/
+
+.banner-section {
+  padding: 100px 50px;
+}
+
+@media (min-width: 768px) {
+  .banner-section {
+    padding: 100px 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    padding: 40px 50px 50px;
+  }
+}
+
+.banner-section h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.banner-section ul li {
+  list-style: none;
+  display: inline-block;
+  img {
+    height: 150px;
+  }
+}
+
+.banner-section ul {
+  text-align: center;
+  padding-left: 0;
+}
+
+.wide{
+  padding: 100px;
+}
+
+.wide img {
+  padding: 30px 0;
+}
+
+#contact {
+  padding: 50px;
+    ul li {
+      padding: 0 20px;
+      img {
+        height: 200px;
+      }
+    }
+}
+/**
+* Colors
+**/
+
+.blue {
+  background-color: #8df8fc;
+}
+.green {
+  background-color: #aaf991;
+}
+.white {
+  background-color: #fff;
+  color: #fff;
+}
 // End of custom style
 
 .site-header {
@@ -197,7 +280,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 0;
 }
 
 .page-heading {
