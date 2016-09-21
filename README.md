@@ -21,4 +21,3 @@ Why I am doing this weird ass README.md file is because,
 * I am weird and awesome
 * I want to put this publicly so I will be held accountable, and more importantly
 * IT IS PART OF MY ASSIGNMENT :grin:
->>>>>>> 9dd8e5a13f661a5070ded2f061e673fb77a9a284
