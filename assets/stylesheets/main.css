@@ -262,6 +262,9 @@ footer {
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent; }
 
+#bs-example-navbar-collapse-1 {
+  border: 0; }
+
 /**
 * Sections
 **/
@@ -296,6 +299,12 @@ footer {
 .banner-section ul {
   text-align: center;
   padding-left: 0; }
+
+.banner-section small {
+  text-align: center;
+  display: inline;
+  font-size: 60%;
+  color: #000; }
 
 .wide {
   padding: 100px; }
