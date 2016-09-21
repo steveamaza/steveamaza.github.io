@@ -27,9 +27,20 @@
   display: inline-block;
   padding: 10px;
   text-transform: uppercase;
-  font-weight: bold;
   font-size: 13px;
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .navlinks a {
+    color: #000;
+  }
+  .navlinks li {
+    display: block;
+  }
+  .navlinks {
+    padding-left: 0;
+  }
 }
 
 .navbar-toggle {
@@ -61,15 +72,18 @@
 }
 
 .banner-section h2 {
-  text-align: center;
   font-size: 40px;
   font-weight: bold;
   color: #fff;
 }
 
+.banner-section h4 {
+  color: #000;
+}
+
 .banner-section ul li {
   list-style: none;
-  display: inline-block;
+  display: inline;
   img {
     height: 150px;
   }
@@ -97,6 +111,13 @@
       }
     }
 }
+
+@media (max-width: 768px) {
+
+  #contact ul li img {
+    height: 150px;
+  }
+}
 /**
 * Colors
 **/
@@ -110,6 +131,9 @@
 .white {
   background-color: #fff;
   color: #fff;
+}
+.fa-heart {
+  color: #be1931;
 }
 // End of custom style
 

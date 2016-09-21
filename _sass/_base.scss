@@ -29,6 +29,7 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  text-align: center;
 }
 p {
   font-size: 16px;
@@ -150,8 +151,8 @@ header {
   min-height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
   background-position: center;
   text-align: center;
   color: white;

@@ -27,7 +27,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  text-align: center; }
 
 p {
   font-size: 16px;
@@ -137,7 +138,6 @@ header {
   width: 100%;
   min-height: auto;
   background-size: cover;
-  -o-background-size: cover;
   background-position: center;
   text-align: center;
   color: white; }
@@ -233,9 +233,16 @@ footer {
   display: inline-block;
   padding: 10px;
   text-transform: uppercase;
-  font-weight: bold;
   font-size: 13px;
   color: #fff; }
+
+@media only screen and (max-width: 768px) {
+  .navlinks a {
+    color: #000; }
+  .navlinks li {
+    display: block; }
+  .navlinks {
+    padding-left: 0; } }
 
 .navbar-toggle {
   float: left; }
@@ -258,14 +265,16 @@ footer {
     padding: 40px 50px 50px; } }
 
 .banner-section h2 {
-  text-align: center;
   font-size: 40px;
   font-weight: bold;
   color: #fff; }
 
+.banner-section h4 {
+  color: #000; }
+
 .banner-section ul li {
   list-style: none;
-  display: inline-block; }
+  display: inline; }
   .banner-section ul li img {
     height: 150px; }
 
@@ -286,6 +295,10 @@ footer {
     #contact ul li img {
       height: 200px; }
 
+@media (max-width: 768px) {
+  #contact ul li img {
+    height: 150px; } }
+
 /**
 * Colors
 **/
@@ -298,6 +311,9 @@ footer {
 .white {
   background-color: #fff;
   color: #fff; }
+
+.fa-heart {
+  color: #be1931; }
 
 .site-header {
   border-top: 5px solid #424242;
