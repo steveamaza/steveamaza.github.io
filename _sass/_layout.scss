@@ -19,6 +19,7 @@
   list-style: none;
   margin: 0;
   text-align: center;
+  padding-left: 0;
 }
 .navlinks li {
   display: inline;
@@ -43,6 +44,11 @@
   }
 }
 
+.page-scroll {
+  a:hover {
+    text-decoration: none;
+  }
+}
 .navbar-toggle {
   float: left;
 }

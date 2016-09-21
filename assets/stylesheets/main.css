@@ -19,7 +19,8 @@ a {
 
 a:hover,
 a:focus {
-  color: #eb3812; }
+  text-decoration: none;
+  font-weight: bold; }
 
 h1,
 h2,
@@ -224,7 +225,8 @@ footer {
 .navlinks {
   list-style: none;
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  padding-left: 0; }
 
 .navlinks li {
   display: inline; }
@@ -243,6 +245,9 @@ footer {
     display: block; }
   .navlinks {
     padding-left: 0; } }
+
+.page-scroll a:hover {
+  text-decoration: none; }
 
 .navbar-toggle {
   float: left; }

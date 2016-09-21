@@ -1,11 +1,38 @@
 <footer class="site-footer">
 
   <div class="wrapper">
-    <img src="assets/img/my-logo.png" alt="Stephen Amaza logo" />
+    <img src="assets/img/my-logo.png" alt="Stephen Amaza logo" width="50px"/>
     <p>
       &copy; 2016 Stephen Amaza. All rights reserved.
     </p>
   </div>
+
+  <!-- FACEBOOK OG -->
+  <meta property="og:url"                content="http://steveamaza.github.io"/>
+  <meta property="og:title"              content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} ">
+  <meta property="og:description"        content="{% if page.ogdescription %}{{ page.ogdescription | truncate: 160 }}{% elsif page.description %}{{ page.description | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}" >
+  <meta property="og:site_name"          content="Stephen Amaza"/>
+  <meta property="og:image"              content="/assets/img/profile.jpg" />
+
+  <!-- TWITTER -->
+  <meta name="twitter:card"         content="summary">
+  <meta name="twitter:site"         content="@steveamaza">
+  <meta name="twitter:creator"      content="@steveamaza">
+  <meta name="twitter:title"        content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} ">
+  <meta name="twitter:description"  content="{% if page.twitterdescription %}{{ page.twitterdescription | truncate: 160 }}{% elsif page.ogdescription %}{{ page.ogdescription | truncate: 160 }}{% elsif page.description %}{{ page.description | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}" />
+  <meta name="twitter:image"        content="/assets/img/profile.jpg" />
+
+  <!-- GOOGLE+ -->
+  <!-- Update your html tag to include the itemscope and itemtype attributes. -->
+  <div itemscope itemtype="http://schema.org/Organization">
+    <a itemprop="url" href="https://www.steveamaza.github.io/">Home</a>
+    <img itemprop="logo" src="https://www.steveamaza.github.io/assets/img/my-logo.png" />
+  </div>
+
+  <!-- Add the following three tags inside head. -->
+  <meta itemprop="name" content="Stephen Amaza">
+  <meta itemprop="description" content="Stephen Amaza is a genius">
+  <meta itemprop="image" content="">
 
   <!-- jQuery -->
   <script src="vendor/jquery/jquery.min.js"></script>
