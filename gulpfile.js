@@ -4,6 +4,7 @@ var cp          = require('child_process'),
     browserSync = require('browser-sync'),
     sass        = require('gulp-sass'),
     autoprefix  = require('gulp-autoprefixer');
+    ghPages     = require('gulp-gh-pages');
 
 var paths = {
   siteDir: '_site/',
@@ -93,3 +94,9 @@ gulp.task('build', ['sass', 'jekyll:build']);
 // Default task, running just `gulp` will compile the sass,
 // compile the jekyll site, launch BrowserSync & watch files.
 gulp.task('default', ['browser-sync', 'watch']);
+
+//Github pages deploy
+gulp.task('deploy', function() {
+  return gulp.src('./_site/**/*')
+    .pipe(ghPages());
+});

@@ -83,6 +83,10 @@
   color: #fff;
 }
 
+.banner-section h3 {
+  color: #fff;
+}
+
 .banner-section h4 {
   color: #000;
 }
@@ -124,6 +128,31 @@
     height: 150px;
   }
 }
+
+@media (max-width: 500px) {
+  .wide {
+    padding: 30px;
+  }
+  .wide ul li img {
+    height: 50px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  #contact {
+    padding: 30px;
+  }
+  #contact ul li {
+    padding: 5px;
+  }
+  #contact ul li img {
+    height: 50px;
+    padding: 5px;
+  }
+}
+
+
 /**
 * Colors
 **/
@@ -241,7 +270,7 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    padding: $spacing-unit 0 0;
 }
 
 .footer-heading {
