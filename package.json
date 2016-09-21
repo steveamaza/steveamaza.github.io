@@ -1,7 +1,7 @@
 {
-  "name": "website",
+  "name": "Stephen Amaza",
   "version": "1.0.0",
-  "description": "Jekyll starter site generator with gulp task automation workflow.",
+  "description": "Personal website of the king Stephen Amaza.",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
@@ -9,11 +9,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "jekyll",
-    "gulp",
-    "generator"
+    "Stephen Amaza",
+    "Codaye",
+    "web development"
   ],
-  "author": "Joshua Azemoh",
+  "author": "Stephen Amaza",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.12.10",
