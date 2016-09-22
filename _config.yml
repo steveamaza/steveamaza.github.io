@@ -26,6 +26,8 @@ exclude: [
   package.json,
   gulpfile.js,
   node_modules,
+  bower_components,
+  bower.json,
   vendor/bundle,
   '**/*.log'
 ]
