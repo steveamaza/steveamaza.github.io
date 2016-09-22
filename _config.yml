@@ -29,6 +29,7 @@ exclude: [
   bower_components,
   bower.json,
   .nojekyll,
+  vendor/bundle,
   '**/*.log'
 ]
 
