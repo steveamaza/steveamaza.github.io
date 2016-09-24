@@ -245,7 +245,7 @@ footer {
   font-size: 13px;
   color: #fff; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .navlinks a {
     color: #000; }
   .navlinks li {
