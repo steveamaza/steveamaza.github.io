@@ -524,3 +524,348 @@ footer {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  color: #acb7c0;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif; }
+
+/* --------------------------------
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both; }
+
+/* --------------------------------
+
+Main components
+
+-------------------------------- */
+#timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+#timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #fff; }
+
+@media only screen and (min-width: 1170px) {
+  #timeline {
+    margin-top: 3em;
+    margin-bottom: 3em; }
+  #timeline::before {
+    left: 50%;
+    margin-left: -2px; } }
+
+.timeline-block {
+  position: relative;
+  margin: 2em 0; }
+
+.timeline-block:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.timeline-block:first-child {
+  margin-top: 0; }
+
+.timeline-block:last-child {
+  margin-bottom: 0; }
+
+@media only screen and (min-width: 1170px) {
+  .timeline-block {
+    margin: 4em 0; }
+  .timeline-block:first-child {
+    margin-top: 0; }
+  .timeline-block:last-child {
+    margin-bottom: 0; } }
+
+.timeline-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
+
+.timeline-img img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -12px; }
+
+.timeline-img.picture {
+  background: #75ce66; }
+
+.timeline-img.movie {
+  background: #c03b44; }
+
+.timeline-img.location {
+  background: #f0ca45; }
+
+.timeline-block .fa {
+  font-size: 35px;
+  margin-top: 14px;
+  margin-left: 8px;
+  color: #fff; }
+
+.timeline-block .fa.fa-briefcase {
+  margin-left: 12px; }
+
+@media only screen and (min-width: 1170px) {
+  .timeline-img {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden; }
+  .cssanimations .timeline-img.is-hidden {
+    visibility: hidden; }
+  .cssanimations .timeline-img.bounce-in {
+    visibility: visible;
+    -webkit-animation: bounce-1 0.6s;
+    animation: bounce-1 0.6s; } }
+
+@media only screen and (max-width: 1170px) {
+  .timeline-block .fa {
+    font-size: 25px;
+    margin-top: 8px;
+    margin-left: 5px; }
+  .timeline-block .fa.fa-briefcase {
+    margin-left: 7px; } }
+
+@-webkit-keyframes bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1); } }
+
+@keyframes bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
+
+.timeline-content {
+  position: relative;
+  margin-left: 60px;
+  background: white;
+  -webkit-border-radius: 0.25em;
+          border-radius: 0.25em;
+  padding: 1em;
+  -webkit-box-shadow: 0 3px 0 #d7e4ed;
+          box-shadow: 0 3px 0 #d7e4ed; }
+
+.timeline-content:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.timeline-content h2 {
+  color: #303e49;
+  text-align: center; }
+
+.timeline-content p, .timeline-content .read-more, .timeline-content .date {
+  font-size: 14px; }
+
+.timeline-content .read-more, .timeline-content .date {
+  display: inline-block; }
+
+.timeline-content p {
+  margin: 1em 0;
+  line-height: 1.6;
+  text-align: center; }
+
+.timeline-content img {
+  height: 50px;
+  display: block;
+  margin: 0 auto; }
+
+.timeline-content .date {
+  color: white;
+  font-weight: bold; }
+
+.no-touch .timeline-content .read-more:hover {
+  background-color: #bac4cb; }
+
+.timeline-content .date {
+  float: left;
+  padding: .8em 0;
+  opacity: .7; }
+
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid white; }
+
+@media only screen and (min-width: 768px) {
+  .timeline-content h2 {
+    font-size: 20px; }
+  .timeline-content p {
+    font-size: 14px; }
+  .timeline-content .read-more, .timeline-content .date {
+    font-size: 14px; } }
+
+@media only screen and (min-width: 1170px) {
+  .timeline-content {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 45%; }
+  .timeline-content::before {
+    top: 24px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: white; }
+  .timeline-content .read-more {
+    float: left; }
+  .timeline-content .date {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 16px; }
+  .timeline-block:nth-child(even) .timeline-content {
+    float: right; }
+  .timeline-block:nth-child(even) .timeline-content::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: white; }
+  .timeline-block:nth-child(even) .timeline-content .read-more {
+    float: right; }
+  .timeline-block:nth-child(even) .timeline-content .date {
+    left: auto;
+    right: 122%;
+    text-align: right; }
+  .cssanimations .timeline-content.is-hidden {
+    visibility: hidden; }
+  .cssanimations .timeline-content.bounce-in {
+    visibility: visible;
+    -webkit-animation: bounce-2 0.6s;
+    animation: bounce-2 0.6s; } }
+
+@media only screen and (max-width: 1170px) {
+  .timeline-content h2 {
+    font-size: 30px; } }
+
+@media only screen and (min-width: 1170px) {
+  /* inverse bounce effect on even content blocks */
+  .cssanimations .timeline-block:nth-child(even) .timeline-content.bounce-in {
+    -webkit-animation: bounce-2-inverse 0.6s;
+    animation: bounce-2-inverse 0.6s; } }
+
+@-webkit-keyframes bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px); }
+  100% {
+    -webkit-transform: translateX(0); } }
+
+@keyframes bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    transform: translateX(-100px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px); }
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); } }
+
+@-webkit-keyframes bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px); }
+  100% {
+    -webkit-transform: translateX(0); } }
+
+@keyframes bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    transform: translateX(100px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px); }
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); } }
+
+.italics {
+  font-style: italic; }
