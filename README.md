@@ -1,7 +1,7 @@
 # Personal Website
 Personal online resume for Stephen Amaza.
 
-##Purpose
+## Purpose
 This will serve as my home and will be constantly updated as my skills in software development journey improve. Feel free to contribute minor changes, but I will rather not accept large rewrites - I know you people are badass out there, wait for me to catch up :blush:
 
 I write pretty well though, so if you want to read my thoughts, head to [my Medium](https://medium.com/@steveamaza).
